@@ -1,13 +1,6 @@
-
-import cv2
-from insightface.app import FaceAnalysis
-
-app = FaceAnalysis()
-app.prepare(ctx_id=1, det_size=(640, 640))
-
-path = 'memo/face.jpg' # file path
-img = cv2.imread(path)
-
-faces = app.get(img)
-vec = faces[0].embedding
-print(vec)
+import time
+import datetime
+import zoneinfo
+date = int(time.time())
+d = datetime.datetime.fromtimestamp(date, datetime.timezone.utc).astimezone(zoneinfo.ZoneInfo("Asia/Tokyo"))
+print(str(d)[:10])

@@ -19,5 +19,3 @@ def write(user_id: str, date: int):
     db[user_id].append(date)
     with open(file_name, 'w') as f:
         json.dump(db, f, indent=2)
-
-write('a', int(time.time()))

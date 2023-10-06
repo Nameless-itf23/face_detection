@@ -7,7 +7,7 @@ import os
 db_path = './db/'
 
 def write(user_id: str, date: int):
-    d = datetime.datetime.fromtimestamp(date, datetime.timezone.utc).astimezone(zoneinfo.ZoneInfo("Asia/Tokyo"))
+    d = datetime.datetime.fromtimestamp(date, datetime.timezone.utc).astimezone(datetime.timezone(datetime.timedelta(hours=9)))
     file_name = db_path+f'{str(d)[:10]}.json'
     if not os.path.isfile(file_name):
         with open(file_name, mode='w') as f:

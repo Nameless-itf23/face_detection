@@ -1,4 +1,4 @@
-# face detection
+# Face Detection
 
 ![image](image.png)
 

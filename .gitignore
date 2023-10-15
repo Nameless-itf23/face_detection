@@ -1,5 +1,6 @@
 *.pyc
 *.jpg
 *.png
+!image.png
 *.json
 insightface_env/

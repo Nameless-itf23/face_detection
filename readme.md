@@ -1,4 +1,7 @@
 # face detection
+
+![image](image.png)
+
 ## 概要
 - 顔画像たった一枚から使える顔認識を使った部屋滞在自動記録システム
 - カメラから顔を読み取り -> insightfaceで識別 -> ログを時刻とともにjson形式で書き込み

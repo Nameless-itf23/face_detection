@@ -10,7 +10,7 @@
 - 人がいつからいつまで部屋に滞在していたのかを記録したい
 - 顔認識して誰がカメラに写ったかを記録
 - webサーバーを立ててそのログをいい感じに見られるようにする
-    - https://github.com/Nameless-itf23/facedetection-server
+    - https://github.com/n4mlz/facedetection-server
 
 ## 顔画像フォルダ
 - faces > (対象者の名前) -> ○○.jpg という形式でフォルダを作ることで簡単にいくらでも顔認識の対象者を登録可能
